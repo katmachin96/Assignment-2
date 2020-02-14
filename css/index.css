@@ -1,0 +1,42 @@
+/* TODO: Your Assignment2 CSS goes here */
+.wrapper-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px 1fr ;
+  max-width: 1400px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+}
+.tweets-container{
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: lightgrey;
+  border-radius: 0.5em;
+  width:800px;
+  height: 1000px;
+}
+#pause-bttn{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 0.5em;
+  margin-right: 40px;
+
+}
+.fetch-bttn{
+  margin-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 0.5em;
+  margin-right: 40px;
+}
+.output-container{
+  margin-top: 15px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
