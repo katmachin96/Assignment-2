@@ -11,31 +11,85 @@
 
 	<body>
 		<!-- Your Assignment2 HTML Structure Here  -->
-		<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand">Navbar</a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		<ul class="skip-links">
+	      <li><a href="#nav"> Skip to navigation</a></li>
+	      <li><a href="#main"> Skip to main content</a></li>
+	      </ul>
+
+
+			<nav role="navigation" id="nav">
+	          <div class="header-NavBar">
+	      <div class="nav-links">
+	            <ul>
+	    <li><a href="$" class="cool-link">Home</a></li>
+	    <li><a href="$" class="cool-link">Moments</a></li>
+	    <li><a href="$" class="cool-link">Notifications</a></li>
+	    <li><a href="$" class="cool-link">Messages</a></li>
+	  </ul>
+	  </div>
+		<div class="twitter-logo">
+	<img class="icon" src="img/twitter-logo.png" alt="twitter logo">
+	</div>
+		<div class="searchBar">
+  <form>
+    <input id="searchBar" class="searchInputBar" type="search" placeholder="Search" aria-label="Search">
   </form>
+</div>
+<div class="searchBttn">
+	<button type="submit">Search</button>
+</div>
+<!-- Pause button-->
+<div class="pauseBttn">
+		<button id="pause-bttn" class="pause-bttn" type="submit">Pause</button>
+</div>
 </nav>
-
+										<!-- Containers -->
+<main role="main" id="main">
 		<div class="wrapper-container">
-			<!-- Pause button-->
-			<button id="pause-bttn" class="pause-bttn" type="submit">Pause</button>
+			<!-- Left button-->
+			<div class="content-Left">
+		            <div class="profile-grid">
+		                  <div class="cover-image">
+		                    <img class="banner" src="img/banner.jpeg" alt="gordon Ramsey holding knives">
+		                  </div>
+		                  <div class="profile-picture">
+												<img class="profile" src="img/gordon.jpg" alt="gordon Ramsey">
+														</div>
+		                          <div class="username-usertag">
+		                          <p class="u-name"> Gordon Ramsay </p>
+		                          <p class="user-tag"> @GordonRamsay </p>
+		                        </div>
 
-			<div class="tweets-container">
-				<div id="response" class="output-container"></div>
-					<div class="tweets" id="tweets">
+		                  <div class="username-usertag">
 
+		                  </div>
+		                  <div class="follower-info">
+		                    <p> Tweets </p>
+		                    <p> Following </p>
+		                    <p> Followers </p>
+		                    <p class="num-style"> 1279 </p>
+		                    <p class="num-style"> 35.4K </p>
+		                    <p class="num-style"> 7.3M </p>
+		                  </div>
+
+		            </div>
+		      </div>
+
+					<div class="tweets-container">
+						<div id="response" class="output-container"></div>
+							<div class="tweets" id="tweets"></div>
 					</div>
-			</div>
 
 		</div>
+</main>
 		<!-- load script after body elements, feel free to play around with this -->
-		<script type="text/javascript" src="index.js"></script>
+
 				<!-- Bootstrap JS  -->
+<script type="text/javascript" src="index.js"></script>
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
 	</body>
 </html>
