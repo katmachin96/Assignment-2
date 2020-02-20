@@ -11,6 +11,7 @@
 
 	<body>
 		<!-- Your Assignment2 HTML Structure Here  -->
+		<header>
 		<ul class="skip-links">
 	      <li><a href="#nav"> Skip to navigation</a></li>
 	      <li><a href="#main"> Skip to main content</a></li>
@@ -35,7 +36,7 @@
     <input id="searchBar" class="searchInputBar" type="search" placeholder="Search" aria-label="Search">
   </form>
 </div>
-<div class="searchBttn">
+<div id="searchButton"class="searchBttn">
 	<button type="submit">Search</button>
 </div>
 <!-- Pause button-->
@@ -43,6 +44,8 @@
 		<button id="pause-bttn" class="pause-bttn" type="submit">Pause</button>
 </div>
 </nav>
+</header>
+							<!-- CONTENT LEFT -->
 										<!-- Containers -->
 <main role="main" id="main">
 		<div class="wrapper-container">
@@ -74,11 +77,52 @@
 
 		            </div>
 		      </div>
-
+<!-- CONTENT CENTER  -->
 					<div class="tweets-container">
 						<div id="response" class="output-container"></div>
 							<div class="tweets" id="tweets"></div>
 					</div>
+					<!-- CONTENT RIGHT  -->
+<div class="content-Right">
+	<div class="follow-container">
+		<p> Who to follow </p>
+	</div>
+	<div class="suggested-followers">
+				<div class="follower1">
+<img class="penguin" src="img/johnOliver.jpg " alt="John Oliver photo">
+					</div>
+					<div class="follower-name1">
+						<p>John Oliver</p>
+					</div>
+								<div class="follower-username1">
+									<p></p>
+								</div>
+										<div class="follow-btn1">
+		<button type="button"> Follow </button>
+										</div>
+										<div class="border-line1">
+
+										</div>
+<img class="penguin1" src="img/samSmith.jpg " alt="Sam Smith photo">
+						<div class="follower-name2">
+							<p class="follower-p"> Sam Smith </p>
+						</div>
+						<div class="follower-username2">
+							<p></p>
+						</div>
+
+						<div class="follow-btn2">
+							<button type="button"> Follow </button>
+						</div>
+
+
+	</div>
+
+</div>
+
+
+
+
 
 		</div>
 </main>
