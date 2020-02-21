@@ -11,7 +11,7 @@
 
 	<body>
 		<!-- Your Assignment2 HTML Structure Here  -->
-		<header>
+
 		<ul class="skip-links">
 	      <li><a href="#nav"> Skip to navigation</a></li>
 	      <li><a href="#main"> Skip to main content</a></li>
@@ -32,9 +32,7 @@
 	<img class="icon" src="img/twitter-logo.png" alt="twitter logo">
 	</div>
 		<div class="searchBar">
-  <form>
     <input id="searchBar" class="searchInputBar" type="search" placeholder="Search" aria-label="Search">
-  </form>
 </div>
 <div id="searchButton"class="searchBttn">
 	<button type="submit">Search</button>
@@ -44,13 +42,14 @@
 		<button id="pause-bttn" class="pause-bttn" type="submit">Pause</button>
 </div>
 </nav>
-</header>
+
 							<!-- CONTENT LEFT -->
 										<!-- Containers -->
 <main role="main" id="main">
-		<div class="wrapper-container">
+		<div role="main" class="wrapper-container">
 			<!-- Left button-->
-			<div class="content-Left">
+			<section role="main" aria-labelledby="UserProfile">
+			<div  class="content-Left">
 		            <div class="profile-grid">
 		                  <div class="cover-image">
 		                    <img class="banner" src="img/banner.jpeg" alt="gordon Ramsey holding knives">
@@ -77,12 +76,16 @@
 
 		            </div>
 		      </div>
+				</section>
 <!-- CONTENT CENTER  -->
+<section role="main" aria-labelledby="tweets">
 					<div class="tweets-container">
 						<div id="response" class="output-container"></div>
 							<div class="tweets" id="tweets"></div>
 					</div>
+				</section>
 					<!-- CONTENT RIGHT  -->
+					<section role="main" aria-labelledby="suggestedFollowers">
 <div class="content-Right">
 	<div class="follow-container">
 		<p> Who to follow </p>
@@ -119,7 +122,7 @@
 	</div>
 
 </div>
-
+</section>
 
 
 

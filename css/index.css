@@ -1,8 +1,23 @@
 /* TODO: Your Assignment2 CSS goes here */
-.skip-links{
-  display:none;
+.skip-links a{
   list-style-type: none;
   text-decoration: none;
+  grid-template-columns:10px 10px;
+  display:grid;
+  position: fixed;
+  width:10px;
+  height:10px;
+  top: -10;
+  overflow: hidden;
+
+
+}
+.skip-links a:focus
+{
+position: fixed;
+width:auto;
+height:auto;
+overflow: visible;
 }
 
 html {
@@ -269,7 +284,7 @@ margin-top: 50px;
 .tweet {
   display: grid;
   grid-template-columns:80px 120px 1fr 50px 1fr;
-  grid-template-rows: 35px 95px;
+  grid-template-rows: 25px 15px 115px;;
   position: relative;
   background-color: white;
   border-bottom: 1px solid #D9E2E3;
@@ -304,6 +319,13 @@ margin-top: 50px;
   font-size: 16px;
 
 }
+.tweet-username{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  font-size: 8;
+  color: grey;
+}
 
 .tweet-time{
   grid-column-start: 6;
@@ -318,13 +340,15 @@ margin-top: 50px;
 .tweet-text{
   grid-column-start: 2;
   grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   color:#4C5050;
   font-size: 15px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
+
+
 /* !!!!!!!!!!!!!!!!!!!NEW SECTION!!!!!!!!!!!!!!!!! */
 
 /* RIGHT CONTAINER */

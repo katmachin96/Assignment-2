@@ -12,7 +12,7 @@ var searchString = ""
 var searchResult = []
 
 //triggered when Search button is pressed
-searchButton.addEventListener('click', function(input){
+searchInputBar.addEventListener('input', function(input){
 
   searchString = searchInputBar.value
 
@@ -86,7 +86,7 @@ function getTweets(){
 }
 
 //makes call to refresh tweets
-var mytweet = setInterval(myTimer, 8000);
+var mytweet = setInterval(myTimer, 5000);
 
 function myTimer() {
 
@@ -138,8 +138,13 @@ function searchTweets(searchInput){
 function createContainer(tweetDatabase) {
   let contain = "<div class=\"maincontainer\">";
   for (let i = 0; i < tweetDatabase.length; i += 1) {
-    let curr_tweet = tweetDatabase[i];
-    contain += createTweet(curr_tweet);
+    var tweetText = tweetDatabase[i].text
+    const searchInput = searchInputBar.value.toLowerCase()
+    if(tweetText.toLowerCase().includes(searchInput)){
+      let curr_tweet = tweetDatabase[i];
+      contain += createTweet(curr_tweet);
+    }
+
   }
   contain += "</div>";
   return contain;
@@ -168,14 +173,21 @@ function createTweet(tweet) {
        tweet.profilePic +
       "\" onerror= this.src=\"img/no_photo.jpg\" alt=\"image not found\">"
       + "</picture>" +"</div>" +
+
   "<div class=\"tweet-user\">" +
       tweet.user +"</div>" +
+
+      "<div class=\"tweet-username\">" + "@"+
+          tweet.username +"</div>" +
+
       "<div class=\"tweet-time\">" +
        makeReadableDate(tweet.time) +
       "</div>" +
+
       "<div class=\"tweet-text\">" +
       tweet.text +
       "</div>" +
+
   "</div>";
 
 
